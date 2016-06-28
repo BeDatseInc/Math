@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
-namespace Math
+namespace Math.View.Master
 {
     public partial class MasterPage : ContentPage
     {

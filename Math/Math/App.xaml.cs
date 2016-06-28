@@ -8,7 +8,7 @@ namespace Math
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Math.MainPage());
+            MainPage = new NavigationPage(new View.MainPage());
         }
 
         protected override void OnStart()

@@ -2,14 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:generic="clr-namespace:System.Collections.Generic;assembly=System.Collections"
-             xmlns:math="clr-namespace:Math;assembly=Math"
-             x:Class="Math.MasterPage"
+             xmlns:detail="clr-namespace:Math.View.Detail;assembly=Math"
+             x:Class="Math.View.Master.MasterPage"
              Title="Menu">
   <ListView x:Name="MenuListView">
     <ListView.ItemsSource>
       <generic:List x:TypeArguments="Page">
-        <math:Home Title="Home"/>
-        <math:Baskara/>
+        <detail:Home Title="Home"/>
+        <detail:Baskara/>
       </generic:List>
     </ListView.ItemsSource>
     <ListView.ItemTemplate>

@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Math"
-             x:Class="Math.MainPage">
+             xmlns:detail="clr-namespace:Math.View.Detail;assembly=Math"
+             xmlns:master="clr-namespace:Math.View.Master;assembly=Math"
+             x:Class="Math.View.MainPage">
   <MasterDetailPage.Master>
-    <local:MasterPage/>
+    <master:MasterPage/>
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
-    <local:Home/>
+    <detail:Home/>
   </MasterDetailPage.Detail>
 </MasterDetailPage>
