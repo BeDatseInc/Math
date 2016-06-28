@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace Math
 {
@@ -13,7 +8,7 @@ namespace Math
         {
             InitializeComponent();
 
-            MainPage = new Math.MainPage();
+            MainPage = new NavigationPage(new Math.MainPage());
         }
 
         protected override void OnStart()

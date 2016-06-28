@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:generic="clr-namespace:System.Collections.Generic;assembly=System.Collections"
+             xmlns:math="clr-namespace:Math;assembly=Math"
+             x:Class="Math.MasterPage"
+             Title="Menu">
+  <ListView x:Name="MenuListView">
+    <ListView.ItemsSource>
+      <generic:List x:TypeArguments="Page">
+        <math:Home Title="Home"/>
+        <math:Baskara/>
+      </generic:List>
+    </ListView.ItemsSource>
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <TextCell Text="{Binding Title}"></TextCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+</ContentPage>
